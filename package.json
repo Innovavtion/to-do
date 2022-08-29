@@ -1,0 +1,8 @@
+{
+  "name": "to-do-list",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/Innovavtion/to-do-list-for-react.git",
+  "author":"Nikita",
+  "license": "MIT"
+}
