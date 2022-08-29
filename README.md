@@ -14,12 +14,13 @@ Make a project with the **standard** functionality of the to-do list, as well as
 
 Main:
 
-- Yarn - https://yarnpkg.com/getting-started
+- Yarn - https://classic.yarnpkg.com/en/
 - React - https://ru.reactjs.org/docs/getting-started.html
 - SaSS - https://sass-lang.com/documentation/
 
 Additional:
 
+- Yarn 2 - https://yarnpkg.com/getting-started
 - MDN - https://developer.mozilla.org/ru/
 - JavaScript - https://learn.javascript.ru/js
 - Handbook - https://doka.guide/
