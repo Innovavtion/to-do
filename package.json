@@ -3,6 +3,12 @@
   "version": "0.0.1",
   "main": "index.js",
   "repository": "https://github.com/Innovavtion/to-do-list-for-react.git",
-  "author":"Nikita",
-  "license": "MIT"
+  "author": "Nikita",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-react": "^7.31.1"
+  }
 }
