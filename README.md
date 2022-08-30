@@ -9,6 +9,7 @@ Make a project with the **standard** functionality of the to-do list, as well as
 - Learn to use **Yarn**
 - Learn to use **React**
 - Learn to use **SaSS**
+- Learn to use **ESLint**
 
 ## Documentation I work with
 
@@ -17,6 +18,7 @@ Main:
 - Yarn - https://classic.yarnpkg.com/en/
 - React - https://ru.reactjs.org/docs/getting-started.html
 - SaSS - https://sass-lang.com/documentation/
+- ESLint - https://eslint.org/docs/latest/
 
 Additional:
 
@@ -24,6 +26,7 @@ Additional:
 - MDN - https://developer.mozilla.org/ru/
 - JavaScript - https://learn.javascript.ru/js
 - Handbook - https://doka.guide/
+- ESLint - [YouTube](https://www.youtube.com/watch?v=RXaltL8yIlc)
 
 # Tasks
 
