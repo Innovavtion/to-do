@@ -2,7 +2,7 @@
     "extends": [
         "airbnb-base",
         "plugin:react/recommended",
-        "import"
+        "plugin:import/recommended"
     ],
     "rules": {
         "no-console": "warn"
