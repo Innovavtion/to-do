@@ -26,7 +26,7 @@ Additional:
 - MDN - https://developer.mozilla.org/ru/
 - JavaScript - https://learn.javascript.ru/js
 - Handbook - https://doka.guide/
-- ESLint - [YouTube](https://www.youtube.com/watch?v=RXaltL8yIlc)
+- ESLint - [YouTube - 1](https://www.youtube.com/watch?v=RXaltL8yIlc), [YouTube - 2](https://www.youtube.com/watch?v=ZXW6Jn6or1w),
 
 # Tasks
 
