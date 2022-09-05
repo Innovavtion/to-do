@@ -1,5 +1,15 @@
-import { render } from 'react-dom';
-import React from 'react';
-import HelloWorld from './HelloWorld';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-render(<HelloWorld />, document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+function tick() {
+  const element = (
+    <div>
+      <h2>Сейчас {new Date().toLocaleTimeString()}.</h2>
+    </div>
+  );
+  root.render(element);
+}
+
+setInterval(tick, 1000);
