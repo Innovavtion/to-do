@@ -1,4 +1,8 @@
 {
+  "env": {
+    "browser": true,
+    "node": true
+  },
   "extends": [
     "airbnb-base",
     "eslint:recommended",
@@ -7,7 +11,8 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
-    "no-console": "warn"
+    "no-console": "warn",
+    "react/prop-types": "off"
   },
   "plugins": ["react", "prettier"]
 }
