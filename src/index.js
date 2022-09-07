@@ -34,3 +34,21 @@ class Clock extends React.Component {
 }
 
 root.render(<Clock />);
+
+function ListItem(props) {
+  return <li>{props.value}</li>;
+}
+
+function NumberList(props) {
+  const { numbers } = props;
+
+  const listItems = numbers.map((number, index) => (
+    <ListItem key={index} value={number} />
+  ));
+
+  return <ul>{listItems}</ul>;
+}
+
+const numbers = [1, 2, 3, 4, 5];
+
+root.render(<NumberList numbers={numbers} />);
