@@ -52,3 +52,42 @@ function NumberList(props) {
 const numbers = [1, 2, 3, 4, 5];
 
 root.render(<NumberList numbers={numbers} />);
+
+class FlaworForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: "cocount",
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSumbit = this.handleSumbit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({ value: event.target.value });
+  }
+
+  handleSumbit(event) {
+    alert(`Ваш любимый вкус: ${this.state.value}`);
+    event.preventDefault();
+  }
+
+  render() {
+    return (
+      <form onSubmit={this.handleSumbit}>
+        <lable>
+          <select value={this.state.value} onChange={this.handleChange}>
+            <option value="grapefruit">Грейпфрут</option>
+            <option value="lime">Лайм</option>
+            <option value="cocount">Кокос</option>
+            <option value="mango">Манго</option>
+          </select>
+        </lable>
+        <input type="submit" value="отправить" />
+      </form>
+    );
+  }
+}
+
+root.render(<FlaworForm />);
