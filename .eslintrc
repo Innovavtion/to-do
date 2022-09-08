@@ -14,7 +14,8 @@
     "no-console": "warn",
     "react/prop-types": "off",
     "max-classes-per-file": "off",
-    "no-useless-concat": "off"
+    "no-useless-concat": "off",
+    "prefer-destructuring": "warn"
   },
   "plugins": ["react", "prettier"]
 }
