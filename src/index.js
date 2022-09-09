@@ -3,6 +3,8 @@ import ReactDOM from "react-dom/client";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
+// ----- Theme - Состояние и жизненый цикл
+
 class Clock extends React.Component {
   constructor(props) {
     super(props);
@@ -35,6 +37,8 @@ class Clock extends React.Component {
 
 root.render(<Clock />);
 
+// ----- Theme - Списки и ключи
+
 function ListItem(props) {
   return <li>{props.value}</li>;
 }
@@ -53,6 +57,8 @@ const numbers = [1, 2, 3, 4, 5];
 
 root.render(<NumberList numbers={numbers} />);
 
+// ----- Theme - Формы
+
 class FlaworForm extends React.Component {
   constructor(props) {
     super(props);
@@ -69,7 +75,7 @@ class FlaworForm extends React.Component {
   }
 
   handleSumbit(event) {
-    // Eslint ноет что это хрень не юзай ее
+    // Eslint ноет что это хрень, не юзай ее
     alert(`Ваш любимый вкус: ${this.state.value}`);
     event.preventDefault();
   }
@@ -92,6 +98,8 @@ class FlaworForm extends React.Component {
 }
 
 root.render(<FlaworForm />);
+
+// ----- Theme - Подъем состояния
 
 // Объект с полным названием систем измерений
 const scaleNames = {
@@ -194,6 +202,8 @@ class Calculator extends React.Component {
 }
 
 root.render(<Calculator />);
+
+// ----- Theme - Композиция против наследования
 
 function FancyBorder(props) {
   return (
