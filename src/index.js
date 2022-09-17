@@ -43,12 +43,17 @@ const PRODUCTS = [
 ];
 
 function FilterableProductTable(props) {
-  const [filterText] = useState("");
-  const [inStockOnly] = useState(false);
+  const [filterText, setFilterText] = useState("");
+  const [inStockOnly, setInStockOnly] = useState(false);
 
   return (
     <div className="FilterableProductTable">
-      <SearchBar filterText={filterText} inStockOnly={inStockOnly} />
+      <SearchBar
+        filterText={filterText}
+        inStockOnly={inStockOnly}
+        onFilterTextChange={setFilterText}
+        onInStockOnly={setInStockOnly}
+      />
       <ProductTable
         filterText={filterText}
         inStockOnly={inStockOnly}
@@ -59,11 +64,28 @@ function FilterableProductTable(props) {
 }
 
 function SearchBar(props) {
+  function onFilterTextChange(e) {
+    props.onFilterTextChange(e.target.value);
+  }
+
+  function onInStockOnly(e) {
+    props.onInStockOnly(e.target.checked);
+  }
+
   return (
     <form>
-      <input type="text" placeholder="Search..." value={props.filterText} />
+      <input
+        type="text"
+        placeholder="Search..."
+        value={props.filterText}
+        onChange={onFilterTextChange}
+      />
       <p>
-        <input type="checkbox" checked={props.inStockOnly} />
+        <input
+          type="checkbox"
+          checked={props.inStockOnly}
+          onChange={onInStockOnly}
+        />
         Only show products in stock
       </p>
     </form>
