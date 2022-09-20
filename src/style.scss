@@ -1,0 +1,7 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: rgb(31, 199, 149);
+
+.color_button {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
