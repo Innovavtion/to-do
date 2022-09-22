@@ -1,30 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
-import "./style.scss";
+
+import App from "./app/App";
+import "./app/scss/style.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const themes = {
-  dark: "dark",
-  light: "light",
-};
-
-function Button() {
-  const [theme, setTheme] = useState(themes.dark);
-
-  function onUpdateTheme() {
-    if (theme === themes.dark) setTheme(themes.light);
-    if (theme === themes.light) setTheme(themes.dark);
-  }
-
-  return (
-    <input
-      type="button"
-      value="Theme"
-      className={theme}
-      onClick={onUpdateTheme}
-    />
-  );
-}
-
-root.render(<Button />);
+root.render(<App />);
