@@ -1,7 +1,22 @@
 $font-stack: Helvetica, sans-serif;
-$primary-color: rgb(31, 199, 149);
 
-.color_button {
+@mixin light-theme {
+  background-color: aquamarine;
+  border: 2px solid #2c2e2c;
+  color: #2c2e2c;
+}
+
+@mixin dark-theme {
+  background-color: #2c2e2c;
+  border: 2px solid aquamarine;
+  color: aquamarine;
+}
+
+.button {
+  @include light-theme;
   font: 100% $font-stack;
-  color: $primary-color;
+}
+
+.dark {
+  @include dark-theme;
 }
