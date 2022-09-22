@@ -1,22 +1,23 @@
 $font-stack: Helvetica, sans-serif;
 
-@mixin light-theme {
-  background-color: aquamarine;
-  border: 2px solid #2c2e2c;
-  color: #2c2e2c;
+//Передаем два аргумента и используем их в стилях
+@mixin theme($color-1, $color-2) {
+  background-color: $color-1;
+  border: 2px solid $color-2;
+  color: $color-2;
 }
 
-@mixin dark-theme {
-  background-color: #2c2e2c;
-  border: 2px solid aquamarine;
-  color: aquamarine;
-}
-
-.button {
-  @include light-theme;
+input {
+  //Общий стиль текста для всех инпутов
   font: 100% $font-stack;
 }
 
+.light {
+  //передано два аргумента
+  @include theme(aquamarine, #2c2e2c);
+}
+
 .dark {
-  @include dark-theme;
+  //передано два аргумента
+  @include theme(#2c2e2c, aquamarine);
 }

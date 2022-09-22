@@ -6,7 +6,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const themes = {
   dark: "dark",
-  light: "",
+  light: "light",
 };
 
 function Button() {
@@ -21,7 +21,7 @@ function Button() {
     <input
       type="button"
       value="Theme"
-      className={`button ${theme}`}
+      className={theme}
       onClick={onUpdateTheme}
     />
   );
