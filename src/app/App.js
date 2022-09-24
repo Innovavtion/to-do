@@ -1,17 +1,20 @@
 import React from "react";
 
-const themes = {
-  dark: "dark",
-  light: "light",
-};
+import { ThemeContext, themes } from "./contexts/ThemeContext";
+import InputToDo from "./components/input/input";
 
-export default class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { theme: themes.light };
-  }
+const App = () => (
+  <ThemeContext.Consumer>
+    {({ theme, setTheme }) => (
+      <InputToDo
+        onChange={() => {
+          if (theme === themes.light) setTheme(themes.dark);
+          if (theme === themes.dark) setTheme(themes.light);
+        }}
+        value={theme === themes.dark}
+      />
+    )}
+  </ThemeContext.Consumer>
+);
 
-  render() {
-    return <button className={this.state.theme}>Theme</button>;
-  }
-}
+export default App;
