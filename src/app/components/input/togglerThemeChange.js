@@ -1,6 +1,6 @@
 import React from "react";
 
-const InputToDo = ({ value, onChange }) => (
+const TogglerThemeChange = ({ value, onChange }) => (
   <label className="switch" htmlFor="toggler">
     <input
       id="toggler"
@@ -14,4 +14,4 @@ const InputToDo = ({ value, onChange }) => (
   </label>
 );
 
-export default InputToDo;
+export default TogglerThemeChange;

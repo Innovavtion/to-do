@@ -6,74 +6,98 @@
 
 :root[data-theme="light"] {
   --background-color: rgba(46, 71, 112, 1);
+  --background-div: #d9d9d9;
+  --icons-color: #1c1b1f;
 }
 
 :root[data-theme="dark"] {
   --background-color: rgba(27, 28, 29, 1);
+  --background-div: #333235;
+  --icons-color: #ffffff;
 }
 
 body {
   background-color: var(--background-color);
 }
 
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+.add-task {
+  //Возможно стоит вынести их в общие настройки
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 35px;
+  background: var(--background-div);
+
+  //Настройки высоты и положения div блока
+  width: 800px;
+  height: 72px;
+  margin: 0 auto;
+  margin-top: 49px;
+
+  //Настройки для внутренних блоков
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 15px;
+  align-items: center;
+  align-content: center;
+
+  div,
+  input {
+    margin: 0 5px;
+  }
+
+  .add-task-text {
+    width: 70px;
+    text-align: center;
+    font-size: 18px;
+    margin-right: 5px;
+    color: var(--icons-color);
+  }
+
+  .add-task-input-wrapper {
+    margin: auto 5px;
+    display: inline;
+    position: relative;
+
+    .add-task-input {
+      width: 600px;
+      height: 31px;
+
+      border: 0;
+      border-bottom: 2px solid #757373;
+      background: none;
+      padding: 0 3px;
+      outline: none;
+      box-sizing: border-box;
+      font-size: 16px;
+
+      &:focus {
+        border-color: var(--icons-color);
+      }
+
+      &:focus + span {
+        display: inline;
+        cursor: pointer;
+      }
+    }
+
+    span {
+      height: 100%;
+      position: absolute;
+      padding: 0 10px;
+      right: 0;
+      display: none;
+      font-size: 25px;
+      color: var(--icons-color);
+    }
+  }
 }
 
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
+.icon {
   cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  fill: var(--icons-color);
 }
 
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-input:checked + .slider {
-  background-color: #2196f3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
+.icon:active {
+  //Уменьшает картинку
+  transform: scale(99%);
 }
