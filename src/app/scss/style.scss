@@ -5,19 +5,104 @@
 }
 
 :root[data-theme="light"] {
+  --background-paginate-number: #1f2f49;
   --background-color: rgba(46, 71, 112, 1);
   --background-div: #d9d9d9;
   --icons-color: #1c1b1f;
+  --text-color: #d9d9d9;
 }
 
 :root[data-theme="dark"] {
+  --background-paginate-number: #ffffff;
   --background-color: rgba(27, 28, 29, 1);
   --background-div: #333235;
   --icons-color: #ffffff;
+  --text-color: #1c1b1f;
 }
 
 body {
   background-color: var(--background-color);
+}
+
+.centredContent {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.function-line-task {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 27px;
+  height: 54px;
+}
+
+.functions-panel {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 35px;
+  background: var(--background-div);
+  width: 212px;
+  height: 54px;
+}
+
+.right-panel {
+  grid-column: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    margin: 0 7px;
+  }
+}
+
+.left-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1;
+  font-size: 20px;
+  div,
+  select {
+    margin: 0 7px;
+    background: none;
+    border: none;
+  }
+
+  select {
+    width: 45px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  select:active,
+  select:focus {
+    outline: none;
+    background: none;
+    border: none;
+  }
+}
+
+.arrow-centreds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paginate-number {
+  width: 147px;
+  height: 47px;
+  background: var(--background-paginate-number);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 35px;
+  grid-column: 3;
+  margin-top: 3.5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--background-div);
+  font-weight: 400;
+  font-size: 27px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.69);
 }
 
 .add-task {
@@ -27,28 +112,27 @@ body {
   background: var(--background-div);
 
   //Настройки высоты и положения div блока
-  width: 800px;
+  width: 100%;
   height: 72px;
-  margin: 0 auto;
   margin-top: 49px;
 
   //Настройки для внутренних блоков
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 15px;
+  padding: 14px;
   align-items: center;
   align-content: center;
 
   div,
   input {
-    margin: 0 5px;
+    margin: 0 7px;
   }
 
   .add-task-text {
-    width: 70px;
+    width: 80px;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     margin-right: 5px;
     color: var(--icons-color);
   }

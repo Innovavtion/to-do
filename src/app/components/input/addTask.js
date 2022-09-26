@@ -13,7 +13,7 @@ function AddTask() {
         />
         <span className="reset">&times;</span>
       </div>
-      <Icons name="addTask" color="#000" size="36" className="add_button" />
+      <Icons name="addTask" color="#000" size="39" className="add_button" />
     </div>
   );
 }
