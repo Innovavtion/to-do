@@ -176,14 +176,14 @@ body {
   height: 40px;
   border-radius: 50px;
   transition: 0.4s;
-  background: url("https://raw.githubusercontent.com/RuchiVS/image-upload/main/moon.png")
-    no-repeat center #212121;
+  background: url("https://raw.githubusercontent.com/RuchiVS/image-upload/main/sun.png")
+    no-repeat center var(--background-div);
   background-size: 30px;
   cursor: pointer;
 }
 .toggle-button:checked {
-  background: url("https://raw.githubusercontent.com/RuchiVS/image-upload/main/sun.png")
-    no-repeat center #ffffff;
+  background: url("https://raw.githubusercontent.com/RuchiVS/image-upload/main/moon.png")
+    no-repeat center var(--background-div);
   background-size: 30px;
 }
 
