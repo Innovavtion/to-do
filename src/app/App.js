@@ -4,11 +4,13 @@ import { ThemeContext } from "./contexts/ThemeContext";
 import AddTask from "./components/input/AddTask";
 import FunctionalLineTasks from "./components/AdditionalFunctional/FunctonLineTasks";
 import Tasks from "./components/tasks/tasks";
+import Setting from "./components/settings/setting";
 
 const App = () => (
   <ThemeContext.Consumer>
     {() => (
       <div className="centredContent">
+        <Setting />
         <AddTask />
         <FunctionalLineTasks />
         <div className="line" />

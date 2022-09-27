@@ -148,6 +148,45 @@ body {
   font-weight: 400;
 }
 
+.setting {
+  @include centred-content-inside-div;
+  position: absolute;
+  left: 90%;
+  flex-direction: column;
+  margin: auto;
+  width: 95px;
+  background-color: var(--background-div);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 35px;
+
+  svg {
+    margin: 20px 0;
+  }
+
+  input {
+    // display: none;
+    margin-bottom: 10px;
+  }
+}
+
+.toggle-button {
+  -webkit-appearance: none;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: 0.4s;
+  background: url("https://raw.githubusercontent.com/RuchiVS/image-upload/main/moon.png")
+    no-repeat center #212121;
+  background-size: 30px;
+  cursor: pointer;
+}
+.toggle-button:checked {
+  background: url("https://raw.githubusercontent.com/RuchiVS/image-upload/main/sun.png")
+    no-repeat center #ffffff;
+  background-size: 30px;
+}
+
 .add-task {
   //Возможно стоит вынести их в общие настройки
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
