@@ -9,7 +9,7 @@ import Setting from "./components/settings/setting";
 const App = () => (
   <ThemeContext.Consumer>
     {({ theme, setTheme }) => (
-      <div className="centredContent">
+      <div className="centred-content">
         <Setting
           onChange={() => {
             if (theme === themes.light) setTheme(themes.dark);

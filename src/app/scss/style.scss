@@ -25,13 +25,24 @@ body {
   color: var(--text-color);
 }
 
+@mixin sizes-block($widht, $height) {
+  width: $widht;
+  height: $height;
+}
+
 @mixin centred-content-inside-div() {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.centredContent {
+@mixin setting-div-background() {
+  background-color: var(--background-div);
+  border-radius: 35px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.centred-content {
   margin: 0 auto;
   width: 800px;
 }
@@ -44,11 +55,8 @@ body {
 }
 
 .functions-panel {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 35px;
-  background: var(--background-div);
-  width: 212px;
-  height: 54px;
+  @include setting-div-background;
+  @include sizes-block(212px, 54px);
 }
 
 .right-panel {
@@ -86,9 +94,8 @@ body {
 }
 
 .line {
+  @include sizes-block(95%, 1px);
   display: flex;
-  width: 95%;
-  height: 1px;
   background-color: var(--icons-color);
   margin: 27px auto;
 }
@@ -98,11 +105,9 @@ body {
 }
 
 .paginate-number {
-  width: 147px;
-  height: 47px;
+  @include setting-div-background;
+  @include sizes-block(147px, 47px);
   background: var(--background-paginate-number);
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 35px;
   grid-column: 3;
   margin-top: 3.5px;
 
@@ -114,12 +119,9 @@ body {
 }
 
 .task {
+  @include setting-div-background;
+  @include sizes-block(100%, 55px);
   display: flex;
-  width: 100%;
-  height: 55px;
-  background: var(--background-div);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 35px;
   padding: 0 20px;
   margin-bottom: 14px;
 
@@ -150,14 +152,12 @@ body {
 
 .setting {
   @include centred-content-inside-div;
+  @include setting-div-background;
   position: absolute;
   left: 90%;
   flex-direction: column;
   margin: auto;
   width: 95px;
-  background-color: var(--background-div);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 35px;
 
   svg {
     margin: 20px 0;
@@ -170,12 +170,10 @@ body {
 }
 
 .toggle-button {
+  @include sizes-block(40px, 40px);
   -webkit-appearance: none;
   outline: none;
-  width: 40px;
-  height: 40px;
   border-radius: 50px;
-  transition: 0.4s;
   background: url("https://raw.githubusercontent.com/RuchiVS/image-upload/main/sun.png")
     no-repeat center var(--background-div);
   background-size: 30px;
@@ -189,13 +187,8 @@ body {
 
 .add-task {
   //Возможно стоит вынести их в общие настройки
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 35px;
-  background: var(--background-div);
-
-  //Настройки высоты и положения div блока
-  width: 100%;
-  height: 72px;
+  @include sizes-block(100%, 72px);
+  @include setting-div-background;
   margin-top: 35px;
 
   //Настройки для внутренних блоков
@@ -223,8 +216,7 @@ body {
     position: relative;
 
     .add-task-input {
-      width: 600px;
-      height: 31px;
+      @include sizes-block(600px, 31px);
 
       border: 0;
       border-bottom: 2px solid #757373;
