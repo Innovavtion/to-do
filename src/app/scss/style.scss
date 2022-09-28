@@ -105,13 +105,13 @@ body {
 }
 
 .paginate-number {
-  @include setting-div-background;
   @include sizes-block(147px, 47px);
+  @include setting-div-background;
+  @include centred-content-inside-div;
   background: var(--background-paginate-number);
   grid-column: 3;
   margin-top: 3.5px;
 
-  @include centred-content-inside-div;
   color: var(--background-div);
   font-weight: 400;
   font-size: 27px;
@@ -186,13 +186,12 @@ body {
 }
 
 .add-task {
-  //Возможно стоит вынести их в общие настройки
   @include sizes-block(100%, 72px);
   @include setting-div-background;
+  @include centred-content-inside-div;
   margin-top: 35px;
 
   //Настройки для внутренних блоков
-  @include centred-content-inside-div;
   flex-direction: row;
   justify-content: center;
   padding: 14px;

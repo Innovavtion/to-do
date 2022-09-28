@@ -1,11 +1,11 @@
 import React from "react";
 import Icons from "../icons/index";
 
-function Task() {
+function Task(props) {
   return (
     <div className="task">
       <Icons name="task-uncheck" size="40" />
-      <div className="task-texts">Какой то текст</div>
+      <div className="task-texts">{props.value}</div>
       <div className="right-task-functional">
         <Icons name="task-edit" size="35" />
         <Icons name="task-delete" size="35" />

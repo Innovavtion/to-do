@@ -9,7 +9,7 @@ function Setting({ value, onChange }) {
       <input
         type="checkbox"
         className="toggle-button"
-        onClick={onChange}
+        onChange={onChange}
         checked={value}
       />
     </div>
