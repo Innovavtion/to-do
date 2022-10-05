@@ -8,7 +8,12 @@ function Task(props) {
       <div className="task-texts">{props.value}</div>
       <div className="right-task-functional">
         <Icons name="task-edit" size="35" />
-        <Icons name="task-delete" size="35" />
+        <button
+          onClick={() => props.deleteTask(props.id)}
+          className="icons-btn"
+        >
+          <Icons name="task-delete" size="35" />
+        </button>
         <Icons
           name="task-drag-indicators"
           size="35"

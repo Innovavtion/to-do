@@ -108,6 +108,7 @@ body {
   @include sizes-block(147px, 47px);
   @include setting-div-background;
   @include centred-content-inside-div;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   background: var(--background-paginate-number);
   grid-column: 3;
   margin-top: 3.5px;
@@ -260,4 +261,10 @@ body {
 
 .icon-drag-and-drop {
   cursor: grab;
+}
+
+.icons-btn {
+  background: none;
+  border: none;
+  padding: 0;
 }

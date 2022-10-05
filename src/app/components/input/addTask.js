@@ -1,7 +1,9 @@
-import React from "react";
+import { React, useState } from "react";
 import Icons from "../icons/index";
 
-function AddTask() {
+function AddTask(props) {
+  const [textInput, setTextInput] = useState("");
+
   return (
     <div className="add-task">
       <div className="add-task-text">Add Task</div>
@@ -10,10 +12,14 @@ function AddTask() {
           className="add-task-input"
           type="text"
           placeholder="max 36 cymbol"
+          onKeyDown={(e) => e.key === "Enter" && props.onAddTask(textInput)}
+          onChange={(e) => setTextInput(e.target.value)}
         />
         <span className="reset">&times;</span>
       </div>
-      <Icons name="addTask" color="#000" size="39" className="add_button" />
+      <button onClick={() => props.onAddTask(textInput)} className="icons-btn">
+        <Icons name="addTask" color="#000" size="39" className="add_button" />
+      </button>
     </div>
   );
 }
