@@ -10,8 +10,10 @@ function Tasks(props) {
             value={item.text}
             key={id}
             id={id}
+            status={item.status}
             setTasks={props.setTasks}
             deleteTask={props.deleteTask}
+            checkTask={props.checkTask}
           />
         ))}
     </div>

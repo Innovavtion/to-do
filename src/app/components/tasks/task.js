@@ -4,7 +4,9 @@ import Icons from "../icons/index";
 function Task(props) {
   return (
     <div className="task">
-      <Icons name="task-uncheck" size="40" />
+      <button onClick={() => props.checkTask(props.id)} className="icons-btn">
+        <Icons name={`task-${props.status}`} size="40" />
+      </button>
       <div className="task-texts">{props.value}</div>
       <div className="right-task-functional">
         <Icons name="task-edit" size="35" />

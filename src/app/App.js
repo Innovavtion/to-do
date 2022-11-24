@@ -28,6 +28,23 @@ function App() {
     );
   }
 
+  function checkTask(id) {
+    const newTasks = tasks.map((item, index) => {
+      let newitem = item;
+
+      if (index === id && item.status === "uncheck") {
+        newitem = { status: "check", text: item.text };
+      } else if (index === id && item.status === "check") {
+        newitem = { status: "uncheck", text: item.text };
+      }
+
+      return newitem;
+    });
+
+    setTasks(newTasks);
+    localStorage.setItem("tasks", JSON.stringify(newTasks));
+  }
+
   return (
     <ThemeContext.Consumer>
       {({ theme, setTheme }) => (
@@ -43,7 +60,12 @@ function App() {
           <AddTask onAddTask={addTask} />
           <FunctionalLineTasks />
           <div className="line" />
-          <Tasks tasks={tasks} setTasks={setTasks} deleteTask={deleteTask} />
+          <Tasks
+            tasks={tasks}
+            setTasks={setTasks}
+            deleteTask={deleteTask}
+            checkTask={checkTask}
+          />
         </div>
       )}
     </ThemeContext.Consumer>
