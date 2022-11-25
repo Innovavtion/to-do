@@ -3,7 +3,6 @@ import Icons from "../icons/index";
 
 function AddTask(props) {
   const [textInput, setTextInput] = useState("");
-
   return (
     <div className="add-task">
       <div className="add-task-text">Add Task</div>
@@ -12,12 +11,20 @@ function AddTask(props) {
           className="add-task-input"
           type="text"
           placeholder="max 36 cymbol"
-          onKeyDown={(e) => e.key === "Enter" && props.onAddTask(textInput)}
+          value={textInput}
+          onKeyDown={(e) =>
+            e.key === "Enter" && props.onAddTask(textInput, setTextInput)
+          }
           onChange={(e) => setTextInput(e.target.value)}
         />
-        <span className="reset">&times;</span>
+        <span className="reset" onClick={() => setTextInput("")}>
+          &times;
+        </span>
       </div>
-      <button onClick={() => props.onAddTask(textInput)} className="icons-btn">
+      <button
+        onClick={() => props.onAddTask(textInput, setTextInput)}
+        className="icons-btn"
+      >
         <Icons name="addTask" color="#000" size="39" className="add_button" />
       </button>
     </div>
