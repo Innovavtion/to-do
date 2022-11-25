@@ -151,6 +151,10 @@ body {
   font-weight: 400;
 }
 
+.check {
+  text-decoration: line-through;
+}
+
 .setting {
   @include centred-content-inside-div;
   @include setting-div-background;

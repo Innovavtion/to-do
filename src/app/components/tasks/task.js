@@ -7,7 +7,7 @@ function Task(props) {
       <button onClick={() => props.checkTask(props.id)} className="icons-btn">
         <Icons name={`task-${props.status}`} size="40" />
       </button>
-      <div className="task-texts">{props.value}</div>
+      <div className={`task-texts ${props.status}`}>{props.value}</div>
       <div className="right-task-functional">
         <Icons name="task-edit" size="35" />
         <button
