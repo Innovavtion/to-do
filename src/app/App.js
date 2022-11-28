@@ -13,20 +13,16 @@ function App() {
   const [tasks, setTasks] = useState(GetTasks);
 
   function addTask(text, inputMethods) {
-    setTasks([...tasks, { text, status: "uncheck" }]);
-    localStorage.setItem(
-      "tasks",
-      JSON.stringify([...tasks, { text, status: "uncheck" }]),
-    );
+    const taskAdd = [...tasks, { text, status: "uncheck" }];
+    setTasks(taskAdd);
+    localStorage.setItem("tasks", JSON.stringify(taskAdd));
     inputMethods("");
   }
 
   function deleteTask(id) {
-    setTasks([...tasks.filter((_, i) => i !== id)]);
-    localStorage.setItem(
-      "tasks",
-      JSON.stringify([...tasks.filter((_, i) => i !== id)]),
-    );
+    const taskDelete = [...tasks.filter((_, i) => i !== id)];
+    setTasks(taskDelete);
+    localStorage.setItem("tasks", JSON.stringify(taskDelete));
   }
 
   function checkTask(id) {
