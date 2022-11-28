@@ -17,9 +17,7 @@ function AddTask(props) {
           }
           onChange={(e) => setTextInput(e.target.value)}
         />
-        <span className="reset" onClick={() => setTextInput("")}>
-          &times;
-        </span>
+        <span onClick={() => setTextInput("")}>&times;</span>
       </div>
       <button
         onClick={() => props.onAddTask(textInput, setTextInput)}
