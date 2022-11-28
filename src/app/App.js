@@ -13,7 +13,7 @@ function App() {
   const [tasks, setTasks] = useState(GetTasks);
 
   function addTask(text, inputMethods) {
-    const taskAdd = [...tasks, { text, status: "uncheck" }];
+    const taskAdd = [{ text, status: "uncheck" }, ...tasks];
     setTasks(taskAdd);
     localStorage.setItem("tasks", JSON.stringify(taskAdd));
     inputMethods("");
