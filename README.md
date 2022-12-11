@@ -30,7 +30,7 @@ Additional:
 
 # Tasks
 
-1. Component layout
+1. [x] Component layout
 2. Writing component logic
 3. Working with cookies
 4. Add dark and light layout
