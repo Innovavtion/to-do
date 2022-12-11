@@ -31,9 +31,9 @@ Additional:
 # Tasks
 
 - [x] Component layout
-- [] Writing component logic
-- [] Working with cookies
-- [] Add dark and light layout
+- [ ] Writing component logic
+- [ ] Working with cookies
+- [ ] Add dark and light layout
 
 # Bags
 
