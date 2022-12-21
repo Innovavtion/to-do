@@ -51,4 +51,4 @@ Additional:
 
 # Bags
 
-- [ ] Adaptibility on mobile
+- [ ] Adaptability on mobile
