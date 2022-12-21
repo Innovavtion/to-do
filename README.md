@@ -30,11 +30,25 @@ Additional:
 
 # Tasks
 
-- [x] Component layout
+- [ ] Component layout
+    - [x] ~~PC Layout~~
+    - [ ] Mobile Loyout
+- [x] ~~Add dark and light layout~~
 - [ ] Writing component logic
-- [ ] Working with cookies
-- [ ] Add dark and light layout
+    - [ ] Base functional to-do
+        - [x] ~~View Task~~
+        - [x] ~~Add Task~~
+        - [x] ~~Delete Task~~
+        - [x] ~~Check Task~~
+        - [ ] Edit Task
+    - [ ] Advanced functional to-do
+        - [ ] Pagination Tasks
+            - [ ] View amount page pagination
+            - [ ] Choice amount Tasks in Pagination
+        - [ ] Delete all Tasks
+        - [ ] Check all Tasks
+- [x] Working with cookies/**localstorage**
 
 # Bags
 
-Not yet
+- [ ] Adaptibility on mobile
