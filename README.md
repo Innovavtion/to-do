@@ -32,7 +32,7 @@ Additional:
 
 - [ ] Component layout
     - [x] ~~PC Layout~~
-    - [ ] Mobile Loyout
+    - [ ] Adaptability mobile Layout
 - [x] ~~Add dark and light layout~~
 - [ ] Writing component logic
     - [ ] Base functional to-do
@@ -42,13 +42,15 @@ Additional:
         - [x] ~~Check Task~~
         - [ ] Edit Task
     - [ ] Advanced functional to-do
+        - [ ] Limit Symbol
+            - [ ] Add Task
+            - [ ] Edit Task
+        - [ ] Delete all Tasks
+        - [ ] Check all Tasks
         - [ ] Pagination Tasks
             - [ ] View amount page pagination
             - [ ] Choice amount Tasks in Pagination
-        - [ ] Delete all Tasks
-        - [ ] Check all Tasks
-- [x] Working with cookies/**localstorage**
+        - [ ] Drag and Drop Task
+- [x] ~~Working with cookies/**localstorage**~~
 
 # Bags
-
-- [ ] Adaptability on mobile
