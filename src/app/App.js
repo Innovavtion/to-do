@@ -42,6 +42,16 @@ function App() {
     localStorage.setItem("tasks", JSON.stringify(newTasks));
   }
 
+  function editTask(id, text) {
+    const newEditTask = tasks.map((item, index) => {
+      const newitem = index === id ? { status: item.status, text } : item;
+      return newitem;
+    });
+
+    setTasks(newEditTask);
+    localStorage.setItem("tasks", JSON.stringify(newEditTask));
+  }
+
   return (
     <ThemeContext.Consumer>
       {({ theme, setTheme }) => (
@@ -62,6 +72,7 @@ function App() {
             setTasks={setTasks}
             deleteTask={deleteTask}
             checkTask={checkTask}
+            editTask={editTask}
           />
         </div>
       )}

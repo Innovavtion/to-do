@@ -1,7 +1,20 @@
-import React from "react";
+import { React, useState } from "react";
 import Task from "./task";
 
 function Tasks(props) {
+  const [dateEditTask, setDateEditTask] = useState({
+    id: null,
+    active: false,
+  });
+
+  function editStateTask(id, active) {
+    if (id === dateEditTask.id && active === !dateEditTask.active) {
+      setDateEditTask({ id, active: false });
+    } else {
+      setDateEditTask({ id, active: true });
+    }
+  }
+
   return (
     <div className="tasks">
       {props.tasks !== null &&
@@ -14,6 +27,9 @@ function Tasks(props) {
             setTasks={props.setTasks}
             deleteTask={props.deleteTask}
             checkTask={props.checkTask}
+            editTask={props.editTask}
+            dateEditTask={dateEditTask}
+            editStateTask={editStateTask}
           />
         ))}
     </div>

@@ -31,27 +31,29 @@ Additional:
 # Tasks
 
 - [ ] Component layout
-    - [x] ~~PC Layout~~
-    - [ ] Adaptability mobile Layout
+  - [x] ~~PC Layout~~
+  - [ ] Adaptability mobile Layout
 - [x] ~~Add dark and light layout~~
 - [ ] Animation component(layout)
 - [ ] Writing component logic
-    - [ ] Base functional to-do
-        - [x] ~~View Task~~
-        - [x] ~~Add Task~~
-        - [x] ~~Delete Task~~
-        - [x] ~~Check Task~~
-        - [ ] Edit Task
-    - [ ] Advanced functional to-do
-        - [ ] Limit Symbol
-            - [ ] Add Task
-            - [ ] Edit Task
-        - [ ] Delete all Tasks
-        - [ ] Check all Tasks
-        - [ ] Pagination Tasks
-            - [ ] View amount page pagination
-            - [ ] Choice amount Tasks in Pagination
-        - [ ] Drag and Drop Task
+  - [ ] Base functional to-do
+    - [x] ~~View Task~~
+    - [x] ~~Add Task~~
+    - [x] ~~Delete Task~~
+    - [x] ~~Check Task~~
+    - [x] ~~Edit Task~~ (Bags)
+  - [ ] Advanced functional to-do
+    - [ ] Limit Symbol
+      - [ ] Add Task
+      - [ ] Edit Task
+    - [ ] Delete all Tasks
+    - [ ] Check all Tasks
+    - [ ] Pagination Tasks
+      - [ ] View amount page pagination
+      - [ ] Choice amount Tasks in Pagination
+    - [ ] Drag and Drop Task
 - [x] ~~Working with cookies/**localstorage**~~
 
 # Bags
+
+- [x] Накостылил с useEffect, так как не меняется state внутри map
