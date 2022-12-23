@@ -34,6 +34,7 @@ Additional:
     - [x] ~~PC Layout~~
     - [ ] Adaptability mobile Layout
 - [x] ~~Add dark and light layout~~
+- [ ] Animation component(layout)
 - [ ] Writing component logic
     - [ ] Base functional to-do
         - [x] ~~View Task~~
