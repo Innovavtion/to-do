@@ -7,14 +7,6 @@ function Tasks(props) {
     active: false,
   });
 
-  function editStateTask(id, active) {
-    if (id === dateEditTask.id && active === !dateEditTask.active) {
-      setDateEditTask({ id, active: false });
-    } else {
-      setDateEditTask({ id, active: true });
-    }
-  }
-
   return (
     <div className="tasks">
       {props.tasks !== null &&
@@ -29,7 +21,7 @@ function Tasks(props) {
             checkTask={props.checkTask}
             editTask={props.editTask}
             dateEditTask={dateEditTask}
-            editStateTask={editStateTask}
+            setDateEditTask={setDateEditTask}
           />
         ))}
     </div>

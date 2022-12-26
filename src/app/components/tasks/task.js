@@ -12,8 +12,13 @@ function Task(props) {
   });
 
   function inputEditTask() {
+    props.setDateEditTask({ id: props.id, active: true });
     props.editTask(props.id, textTask);
-    props.editStateTask(props.id, !props.dateEditTask.active);
+  }
+
+  function foldingEditTask() {
+    props.setDateEditTask({ id: null, active: false });
+    props.editTask(props.id, textTask);
   }
 
   return (
@@ -30,6 +35,7 @@ function Task(props) {
             onKeyDown={(e) => e.key === "Enter" && inputEditTask()}
             onChange={(e) => setTextTask(e.target.value)}
             autoFocus
+            onBlur={() => foldingEditTask()}
           />
           <button
             onClick={() => inputEditTask()}
@@ -42,10 +48,7 @@ function Task(props) {
         <div className="text-and-functional-task">
           <div className={`task-texts ${props.status}`}>{props.value}</div>
           <div className="right-task-functional">
-            <button
-              onClick={() => props.editStateTask(props.id)}
-              className="icons-btn"
-            >
+            <button onClick={() => inputEditTask()} className="icons-btn">
               <Icons name="task-edit" size="35" />
             </button>
             <button
