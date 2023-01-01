@@ -48,13 +48,16 @@ Additional:
       - [ ] Edit Task
     - [ ] Delete all Tasks
     - [ ] Check all Tasks
-    - [ ] Pagination Tasks
-      - [ ] View amount page pagination
-      - [ ] Choice amount Tasks in Pagination
+    - [x] ~~Pagination Tasks~~ +-
+      - [x] ~~View amount page pagination~~ +-
+      - [x] ~~Choice amount Tasks in Pagination~~
     - [ ] Drag and Drop Task
 - [x] ~~Working with cookies/**localstorage**~~
 
 # Bags
 
 - [ ] Накостылил с useEffect, так как не меняется state внутри map
-- [x] ~~Сделать чтобы при клике на пустое место изменение убиралось~~
+
+# Peculiarities
+
+- pagination implemented via range

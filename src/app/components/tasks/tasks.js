@@ -10,20 +10,25 @@ function Tasks(props) {
   return (
     <div className="tasks">
       {props.tasks !== null &&
-        props.tasks.map((item, id) => (
-          <Task
-            value={item.text}
-            key={id}
-            id={id}
-            status={item.status}
-            setTasks={props.setTasks}
-            deleteTask={props.deleteTask}
-            checkTask={props.checkTask}
-            editTask={props.editTask}
-            dateEditTask={dateEditTask}
-            setDateEditTask={setDateEditTask}
-          />
-        ))}
+        props.tasks.map((item, id) => {
+          if (props.rangeStartTasks <= id && props.rangeEndTasks > id) {
+            return (
+              <Task
+                value={item.text}
+                key={id}
+                id={id}
+                status={item.status}
+                setTasks={props.setTasks}
+                deleteTask={props.deleteTask}
+                checkTask={props.checkTask}
+                editTask={props.editTask}
+                dateEditTask={dateEditTask}
+                setDateEditTask={setDateEditTask}
+              />
+            );
+          }
+          return <div key={id} />;
+        })}
     </div>
   );
 }

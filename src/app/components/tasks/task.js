@@ -9,7 +9,7 @@ function Task(props) {
     if (props.value !== textTask && props.dateEditTask.active === false) {
       setTextTask(props.value);
     }
-  });
+  }, []);
 
   function activeEditTask() {
     props.setDateEditTask({ id: props.id, active: true });
@@ -35,6 +35,7 @@ function Task(props) {
             onChange={(e) => setTextTask(e.target.value)}
             autoFocus
             onBlur={() => foldingEditTask()}
+            maxLength="50"
           />
           <button
             onClick={() => activeEditTask()}
