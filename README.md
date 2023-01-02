@@ -60,4 +60,4 @@ Additional:
 
 # Peculiarities
 
-- pagination implemented via range
+- Pagination implemented via range
