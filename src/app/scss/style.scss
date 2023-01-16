@@ -188,13 +188,28 @@ body {
   width: 95px;
 
   svg {
-    margin: 20px 0;
+    margin: 16px 0;
   }
+  // Animation setting
 
-  input {
-    // display: none;
+  .toggle-button.true {
+    opacity: 1;
+    visibility: visible;
+    @include sizes-block(40px, 40px);
+    transition: 0.2s ease-out;
     margin-bottom: 10px;
   }
+
+  .toggle-button.false {
+    opacity: 0;
+    visibility: hidden;
+    @include sizes-block(40px, 0px);
+    transition: 0.2s ease-out;
+  }
+  
+  // Animation setting
+
+  overflow: hidden;
 }
 
 .toggle-button {

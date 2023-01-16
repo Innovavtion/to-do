@@ -17,7 +17,6 @@ function AddTask(props) {
           }
           onChange={(e) => setTextInput(e.target.value)}
           maxLength="50"
-          required="required"
         />
         <span onClick={() => setTextInput("")}>&times;</span>
       </div>
