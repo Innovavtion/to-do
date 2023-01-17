@@ -11,7 +11,7 @@ function Setting({ value, onChange }) {
         className="icons-btn"
         onClick={() => setSettingVisible(!settingVisible)}
       >
-        <Icons name="setting" size="40" />
+        <Icons name="setting" size="40" className={settingVisible} />
       </button>
       <input
         type="checkbox"

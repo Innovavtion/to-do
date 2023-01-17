@@ -9,7 +9,7 @@ function Task(props) {
     if (props.value !== textTask && props.dateEditTask.active === false) {
       setTextTask(props.value);
     }
-  }, []);
+  });
 
   function activeEditTask() {
     props.setDateEditTask({ id: props.id, active: true });

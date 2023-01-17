@@ -192,6 +192,16 @@ body {
   }
   // Animation setting
 
+  .icon.icon-setting.false {
+    transform: rotate(0deg);
+    transition: 0.2s ease-out;
+  }
+
+  .icon.icon-setting.true {
+    transform: rotate(90deg);
+    transition: 0.2s ease-out;
+  } 
+
   .toggle-button.true {
     opacity: 1;
     visibility: visible;
