@@ -34,9 +34,9 @@ Additional:
   - [x] ~~PC Layout~~
   - [ ] Adaptability mobile Layout
 - [x] ~~Add dark and light layout~~
-- [ ] Animation component(layout)
+- [x] Animation component(layout)+-
 - [ ] Writing component logic
-  - [ ] Base functional to-do
+  - [x] Base functional to-do
     - [x] ~~View Task~~
     - [x] ~~Add Task~~
     - [x] ~~Delete Task~~
@@ -46,8 +46,8 @@ Additional:
     - [ ] Limit Symbol
       - [ ] Add Task
       - [ ] Edit Task
-    - [ ] Delete all Tasks
-    - [ ] Check all Tasks
+    - [x] Uncheck all Tasks
+    - [x] Check all Tasks
     - [x] ~~Pagination Tasks~~ +-
       - [x] ~~View amount page pagination~~ +-
       - [x] ~~Choice amount Tasks in Pagination~~

@@ -28,6 +28,8 @@ function funtionalLineTask(props) {
           <option value="5">5</option>
           <option value="6">6</option>
           <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
         </select>
       </FunctionsPanel>
       <div
@@ -48,8 +50,18 @@ function funtionalLineTask(props) {
         <Icons name="arrow-ios" size="52" />
       </div>
       <FunctionsPanel className="right-panel">
-        <Icons name="tasks-check" size="38" />
-        <Icons name="tasks-uncheck" size="38" />
+        <div
+          className="arrow-centreds"
+          onClick={() => props.checkRowTask("check")}
+        >
+          <Icons name="tasks-check" size="38" />
+        </div>
+        <div
+          className="arrow-centreds"
+          onClick={() => props.checkRowTask("uncheck")}
+        >
+          <Icons name="tasks-uncheck" size="38" />
+        </div>
       </FunctionsPanel>
     </div>
   );

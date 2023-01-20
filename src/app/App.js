@@ -74,6 +74,21 @@ function App() {
     localStorage.setItem("tasks", JSON.stringify(newTasks));
   }
 
+  function checkRowTask(currentMove) {
+    const newTasks = tasks.map((item, index) => {
+      let newItem = item;
+
+      if (index < rangeEndTasks && index >= rangeStartTasks) {
+        newItem = { status: currentMove, text: item.text };
+      }
+
+      return newItem;
+    });
+
+    setTasks(newTasks);
+    localStorage.setItem("tasks", JSON.stringify(newTasks));
+  }
+
   function editTask(id, text) {
     const newEditTask = tasks.map((item, index) => {
       const newitem = index === id ? { status: item.status, text } : item;
@@ -104,6 +119,7 @@ function App() {
             totalPaginate={totalPaginate}
             currentTaskPaginate={currentTaskPaginate}
             setCurrentTaskPaginate={setCurrentTaskPaginate}
+            checkRowTask={checkRowTask}
           />
           <div className="line" />
           <Tasks
