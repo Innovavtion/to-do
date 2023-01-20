@@ -27,9 +27,12 @@ function App() {
 
   // Обновление лемита задачек
   function updateLimitTask(value) {
-    setLimitTask(value);
-    localStorage.setItem("taskLimit", value);
-    setTotalPaginate(Math.ceil(tasks.length / value));
+    if (value >= 1 && value <= 9) {
+      setLimitTask(value);
+      localStorage.setItem("taskLimit", value);
+      setTotalPaginate(Math.ceil(tasks.length / value));
+    }
+
     setCurrentTaskPaginate(1);
   }
 
