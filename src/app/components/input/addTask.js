@@ -3,6 +3,13 @@ import Icons from "../icons/index";
 
 function AddTask(props) {
   const [textInput, setTextInput] = useState("");
+
+  function checkAmountText(text) {
+    if (text.length <= 50) {
+      setTextInput(text);
+    }
+  }
+
   return (
     <div className="add-task">
       <div className="add-task-text">Add Task</div>
@@ -15,7 +22,7 @@ function AddTask(props) {
           onKeyDown={(e) =>
             e.key === "Enter" && props.onAddTask(textInput, setTextInput)
           }
-          onChange={(e) => setTextInput(e.target.value)}
+          onChange={(e) => checkAmountText(e.target.value)}
           maxLength="50"
         />
         <span onClick={() => setTextInput("")}>&times;</span>

@@ -4,6 +4,12 @@ import Icons from "../icons/index";
 function Task(props) {
   const [textTask, setTextTask] = useState(props.value);
 
+  function checkAmountText(text) {
+    if (text.length <= 50) {
+      setTextTask(text);
+    }
+  }
+
   // Изменяем state если добавляется новый элемент, так как state не меняется внутри map
   useEffect(() => {
     if (props.value !== textTask && props.dateEditTask.active === false) {
@@ -32,7 +38,7 @@ function Task(props) {
             className="input-edit-task"
             value={textTask}
             onKeyDown={(e) => e.key === "Enter" && foldingEditTask()}
-            onChange={(e) => setTextTask(e.target.value)}
+            onChange={(e) => checkAmountText(e.target.value)}
             autoFocus
             onBlur={() => foldingEditTask()}
             maxLength="50"

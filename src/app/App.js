@@ -37,15 +37,17 @@ function App() {
   }
 
   function addTask(text, inputMethods) {
-    const taskAdd = [{ text, status: "uncheck" }, ...tasks];
-    setTasks(taskAdd);
-    localStorage.setItem("tasks", JSON.stringify(taskAdd));
-    inputMethods("");
+    if (text.length > 0) {
+      const taskAdd = [{ text, status: "uncheck" }, ...tasks];
+      setTasks(taskAdd);
+      localStorage.setItem("tasks", JSON.stringify(taskAdd));
+      inputMethods("");
 
-    // Изменение state пагинации
-    const totalPaginateTasks = Math.ceil((tasks.length + 1) / limitTask);
-    setTotalPaginate(totalPaginateTasks);
-    setCurrentTaskPaginate(1);
+      // Изменение state пагинации
+      const totalPaginateTasks = Math.ceil((tasks.length + 1) / limitTask);
+      setTotalPaginate(totalPaginateTasks);
+      setCurrentTaskPaginate(1);
+    }
   }
 
   function deleteTask(id) {
@@ -93,13 +95,15 @@ function App() {
   }
 
   function editTask(id, text) {
-    const newEditTask = tasks.map((item, index) => {
-      const newitem = index === id ? { status: item.status, text } : item;
-      return newitem;
-    });
+    if (text.length > 0) {
+      const newEditTask = tasks.map((item, index) => {
+        const newitem = index === id ? { status: item.status, text } : item;
+        return newitem;
+      });
 
-    setTasks(newEditTask);
-    localStorage.setItem("tasks", JSON.stringify(newEditTask));
+      setTasks(newEditTask);
+      localStorage.setItem("tasks", JSON.stringify(newEditTask));
+    }
   }
 
   return (

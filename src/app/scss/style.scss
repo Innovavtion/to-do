@@ -151,6 +151,9 @@ body {
   margin-left: 14px;
   font-size: 27px;
   font-weight: 400;
+  // Пока такая заглушка
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .check {

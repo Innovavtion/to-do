@@ -2,13 +2,13 @@
 
 Make a project with the **standard** functionality of the to-do list, as well as add **additional** functionality.
 
-**Stack: Yarn, React, SaSS**
+**Stack: Yarn, React, SaSS/SCSS**
 
 ## Objective of the project
 
 - Learn to use **Yarn**
 - Learn to use **React**
-- Learn to use **SaSS**
+- Learn to use **SaSS/SCSS**
 - Learn to use **ESLint**
 
 ## Documentation I work with
@@ -43,20 +43,22 @@ Additional:
     - [x] ~~Check Task~~
     - [x] ~~Edit Task~~ (Bags)
   - [ ] Advanced functional to-do
-    - [ ] Limit Symbol
-      - [ ] Add Task
-      - [ ] Edit Task
-    - [x] Uncheck all Tasks
-    - [x] Check all Tasks
+    - [x] ~~Limit Symbol~~
+      - [x] ~~Empty Task~~
+      - [x] ~~Add Task~~
+      - [x] ~~Edit Task~~
+    - [x] ~~Uncheck row Tasks~~
+    - [x] ~~Check row Tasks~~
     - [x] ~~Pagination Tasks~~ +-
       - [x] ~~View amount page pagination~~ +-
       - [x] ~~Choice amount Tasks in Pagination~~
     - [ ] Drag and Drop Task
 - [x] ~~Working with cookies/**localstorage**~~
 
-# Bags
+# Problems
 
 - [ ] Накостылил с useEffect, так как не меняется state внутри map
+- [ ] Повторение логики на проверку колличесства символов (добавление задачи, изменение задача, ввод текста задачи)
 
 # Peculiarities
 
