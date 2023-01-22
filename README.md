@@ -43,7 +43,7 @@ Additional:
     - [x] ~~Check Task~~
     - [x] ~~Edit Task~~ (Bags)
   - [ ] Advanced functional to-do
-    - [x] ~~Limit Symbol~~
+    - [x] ~~Limit Symbol~~ +-
       - [x] ~~Empty Task~~
       - [x] ~~Add Task~~
       - [x] ~~Edit Task~~
@@ -59,6 +59,7 @@ Additional:
 
 - [ ] Накостылил с useEffect, так как не меняется state внутри map
 - [ ] Повторение логики на проверку колличесства символов (добавление задачи, изменение задача, ввод текста задачи)
+- [ ] Добавить отображения текста задачи, если он не поместился в размер блока
 
 # Peculiarities
 

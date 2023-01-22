@@ -52,7 +52,9 @@ function Task(props) {
         </div>
       ) : (
         <div className="text-and-functional-task">
-          <div className={`task-texts ${props.status}`}>{props.value}</div>
+          <div className={`task-texts drag-and-drop ${props.status}`}>
+            {props.value}
+          </div>
           <div className="right-task-functional">
             <button onClick={() => activeEditTask()} className="icons-btn">
               <Icons name="task-edit" size="35" />
@@ -63,11 +65,6 @@ function Task(props) {
             >
               <Icons name="task-delete" size="35" />
             </button>
-            <Icons
-              name="task-drag-indicators"
-              size="35"
-              className="icon-drag-and-drop"
-            />
           </div>
         </div>
       )}

@@ -147,7 +147,7 @@ body {
 }
 
 .task-texts {
-  width: 565px;
+  width: 605px;
   margin-left: 14px;
   font-size: 27px;
   font-weight: 400;
@@ -316,10 +316,10 @@ body {
 
 .icon:active {
   //Уменьшает картинку
-  transform: scale(99%);
+  transform: scale(98%);
 }
 
-.icon-drag-and-drop {
+.drag-and-drop {
   cursor: grab;
 }
 
