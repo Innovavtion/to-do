@@ -28,31 +28,35 @@ Additional:
 - Handbook - https://doka.guide/
 - ESLint - [YouTube - 1](https://www.youtube.com/watch?v=RXaltL8yIlc), [YouTube - 2](https://www.youtube.com/watch?v=ZXW6Jn6or1w)
 
+Additional Library:
+
+- React-smooth-dnd - https://github.com/kutlugsahin/react-smooth-dnd
+
 # Tasks
 
 - [ ] Component layout
-  - [x] ~~PC Layout~~
+  - [x] ~~PC Layout~~ (Problems 3)
   - [ ] Adaptability mobile Layout
 - [x] ~~Add dark and light layout~~
-- [x] Animation component(layout)+-
-- [ ] Writing component logic
-  - [x] Base functional to-do
+- [x] ~~Animation component(layout) ~~ +-
+- [x] ~~Writing component logic ~~ +-
+  - [x] ~~Base functional to-do~~
     - [x] ~~View Task~~
     - [x] ~~Add Task~~
     - [x] ~~Delete Task~~
     - [x] ~~Check Task~~
-    - [x] ~~Edit Task~~ (Bags)
-  - [ ] Advanced functional to-do
-    - [x] ~~Limit Symbol~~ +-
+    - [x] ~~Edit Task~~ (Problems 1) +-
+  - [x] ~~Advanced functional to-do~~ +-
+    - [x] ~~Limit Symbol~~ (Problems 2) +-
       - [x] ~~Empty Task~~
       - [x] ~~Add Task~~
       - [x] ~~Edit Task~~
     - [x] ~~Uncheck row Tasks~~
     - [x] ~~Check row Tasks~~
     - [x] ~~Pagination Tasks~~ +-
-      - [x] ~~View amount page pagination~~ +-
+      - [x] ~~View amount page pagination~~ (Peculiarities 1) +-
       - [x] ~~Choice amount Tasks in Pagination~~
-    - [ ] Drag and Drop Task
+    - [x] ~~Drag and Drop Task~~ (Problems 4,5) +-
 - [x] ~~Working with cookies/**localstorage**~~
 
 # Problems
@@ -60,6 +64,8 @@ Additional:
 - [ ] Накостылил с useEffect, так как не меняется state внутри map
 - [ ] Повторение логики на проверку колличесства символов (добавление задачи, изменение задача, ввод текста задачи)
 - [ ] Добавить отображения текста задачи, если он не поместился в размер блока
+- [ ] Моргает текст задачек, при измениии элементов в массиве (drag and drop)
+- [ ] Нету функционала для перемещения задачи на другую страницу пагинации
 
 # Peculiarities
 
