@@ -38,8 +38,8 @@ Additional Library:
   - [x] ~~PC Layout~~ (Problems 3)
   - [ ] Adaptability mobile Layout
 - [x] ~~Add dark and light layout~~
-- [x] ~~Animation component(layout) ~~ +-
-- [x] ~~Writing component logic ~~ +-
+- [x] ~~Animation component(layout)~~ +-
+- [x] ~~Writing component logic~~ +-
   - [x] ~~Base functional to-do~~
     - [x] ~~View Task~~
     - [x] ~~Add Task~~
