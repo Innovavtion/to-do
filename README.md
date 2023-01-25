@@ -10,6 +10,7 @@ Make a project with the **standard** functionality of the to-do list, as well as
 - Learn to use **React**
 - Learn to use **SaSS/SCSS**
 - Learn to use **ESLint**
+- Learn to use **Prettier**
 
 ## Documentation I work with
 
@@ -64,7 +65,7 @@ Additional Library:
 - [ ] Накостылил с useEffect, так как не меняется state внутри map
 - [ ] Повторение логики на проверку колличесства символов (добавление задачи, изменение задача, ввод текста задачи)
 - [ ] Добавить отображения текста задачи, если он не поместился в размер блока
-- [ ] Моргает текст задачек, при измениии элементов в массиве (drag and drop)
+- [ ] Моргает текст задачек, при измениии позиций задачек в массиве (drag and drop)
 - [ ] Нету функционала для перемещения задачи на другую страницу пагинации
 
 # Peculiarities

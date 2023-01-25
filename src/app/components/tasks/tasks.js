@@ -20,7 +20,11 @@ function Tasks(props) {
 
   return (
     <div className="tasks">
-      <Container lockAxis="y" onDrop={(e) => editPosition(e)}>
+      <Container
+        lockAxis="y"
+        onDrop={(e) => editPosition(e)}
+        dragHandleSelector=".drag-handle"
+      >
         {props.tasks.map((item, id) => {
           if (props.rangeStartTasks <= id && props.rangeEndTasks > id) {
             return (

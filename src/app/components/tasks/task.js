@@ -52,7 +52,9 @@ function Task(props) {
         </div>
       ) : (
         <div className="text-and-functional-task">
-          <div className={`task-texts drag-and-drop ${props.status}`}>
+          <div
+            className={`task-texts drag-and-drop drag-handle ${props.status}`}
+          >
             {props.value}
           </div>
           <div className="right-task-functional">
