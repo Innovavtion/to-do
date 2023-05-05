@@ -328,3 +328,23 @@ body {
   border: none;
   padding: 0;
 }
+
+@media (max-width: 1027px) {
+  .setting {
+    display: none;
+  }
+
+  .centred-content {
+    width: 955px;
+  }
+
+  .add-task {
+    height: 105px;
+    border-radius: 50px;
+  }
+
+  .add-task-input {
+    width: 715px;
+    height: 55px;
+  }
+}
